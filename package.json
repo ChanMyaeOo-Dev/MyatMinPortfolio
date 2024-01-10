@@ -1,8 +1,10 @@
 {
+  "homepage": "https://ChanMyaeOo-Dev.github.io/MyatMinPortfolio",
   "name": "reactjs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primereact": "^10.3.0",
@@ -13,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
